@@ -1,0 +1,56 @@
+nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: aquamarine;
+    height: 3rem;
+}
+
+nav a {
+    margin: .5rem 1rem;
+}
+
+#grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.element {
+    height: 400px;
+    background-color: purple;
+}
+
+article:nth-of-type(2n) {
+    background-color: red;
+}
+
+article:nth-of-type(3n) {
+    background-color: green;
+}
+
+.elementWide {
+    width: 100%;
+    background-color: blue;
+    height: 400px;
+}
+
+.elementSmall {
+    width: calc(100% /3);
+    background-color: burlywood;
+    height: 200px;
+}
+
+@media only screen and (min-width: 320px) {
+    .element {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 650px) {
+    .element {
+        width: 50%;
+    }
+}
