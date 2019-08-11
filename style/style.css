@@ -1,20 +1,33 @@
     /* #318563 */
     
     body {
-        background-image: url("../Images/prism.png");
+        /* background-image: url("../Images/prism.png"); */
+    }
+    
+    .name {
+        font-size: 10vw;
+        text-align: center;
+        margin-bottom: .5em;
+        color: rgb(104, 104, 104);
     }
     
     .label {
         font-size: 3rem;
-        background-color: white;
-        height: 5rem;
+        color: white;
+        height: 400px;
+        /* background-color: white; 
+        height: 5rem; 
         position: absolute;
-        /* top: 0; */
+        top: 0;
         bottom: 0;
         left: 0;
-        right: 0;
+        right: 0; */
         text-align: center;
         opacity: .9;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     
     nav {
@@ -37,13 +50,6 @@
         text-decoration: none;
     }
     
-    .nav-text {
-        font-size: 3.5rem;
-        color: black;
-        padding-left: 1rem;
-        padding-top: .5rem;
-    }
-    
     .spacer {
         height: 3.5rem;
         width: 100%;
@@ -57,8 +63,23 @@
         margin: auto;
     }
     
+    .section-label {
+        width: 100%;
+        /* background-color: #5474D1; */
+        /* height: 5rem; */
+        margin: .25%;
+        /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+        /* position: relative;
+        top: 40px; */
+        z-index: 98;
+        font-size: 15vw;
+        color: black;
+        padding-left: 1rem;
+        padding-top: .5rem;
+    }
+    
     .element {
-        height: 200px;
+        height: 400px;
         background-color: #58D1CB;
         margin: .25%;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -87,24 +108,24 @@
     }
     
     .element-color-1 {
-        background-color: #62D1A5;
+        background-color: rgb(146, 71, 62);
     }
     
     .element-color-2 {
-        background-color: #318563;
+        background-color: #3B4063;
     }
     
     .element-color-3 {
-        background-color: #853424;
+        background-color: #1C323D;
     }
     
     .element-color-4 {
-        background-color: #D17462;
+        background-color: #4B79B3;
     }
     
     .elementWide {
         width: 100%;
-        background-color: #5474D1;
+        /* background-color: #5474D1; */
         height: 5rem;
         margin: .25%;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
