@@ -7,13 +7,7 @@
         text-decoration: none;
         color: rgb(63, 136, 253);
         font-weight: bold;
-        /* border-bottom: 2px solid rgb(255, 187, 132); */
         font-style: italic;
-        font-size: 3rem;
-    }
-    
-    a:hover {
-        color: white;
     }
     
     .links {
@@ -221,6 +215,15 @@
     
     .color-red {
         color: red;
+    }
+    
+    .ext-link {
+        font-size: 2rem;
+    }
+    
+    li {
+        font-size: 1.5rem;
+        padding-left: 2.5rem;
     }
     /* phones */
     
