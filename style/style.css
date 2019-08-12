@@ -1,8 +1,7 @@
     /* #318563 */
-    
-    body {
-        /* background-image: url("../Images/prism.png"); */
-    }
+    /* body {
+        background-image: url("../Images/prism.png");
+    } */
     
     a {
         text-decoration: none;
@@ -19,8 +18,24 @@
     
     .links {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
+        /* text-align: center; */
+        height: 400px;
+        /* background-color: white; */
+        /* height: 5rem; */
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+    }
+    
+    .link-section {
+        width: 100%;
+        height: 100%;
+        opacity: 0;
     }
     
     .name {
@@ -111,7 +126,7 @@
         /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
         position: relative;
         top: 3.5vw;
-        z-index: 98;
+        z-index: 0;
         font-size: 15vw;
         color: black;
         padding-left: 1rem;
@@ -132,6 +147,10 @@
         color: black;
     }
     
+    .link {
+        padding: 0;
+    }
+    
     .element {
         height: 400px;
         background-color: #58D1CB;
@@ -146,20 +165,28 @@
         opacity: 0;
     }
     
-    .screenshotOverlay {
-        /* background-color: #58D1CB; */
+    .clickableDiv {
+        background-color: #58D1CB;
         position: absolute;
-        opacity: 0;
+        /* opacity: 0; */
         width: 100%;
         height: 100%;
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
     }
     
-    .screenshotOverlay:hover {
+    .link-section:hover,
+    .link-section:focus,
+    .link-section:active {
         opacity: .8;
+        transition: opacity .5s;
     }
     
     .element-color-1 {
@@ -191,6 +218,10 @@
         margin: .25%;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     }
+    
+    .color-red {
+        color: red;
+    }
     /* phones */
     
     @media only screen and (min-width: 320px) and (max-width: 649px) {
@@ -199,9 +230,6 @@
         }
         .elementSmall {
             width: 49.5%;
-        }
-        article:nth-of-type(2) {
-            background: red;
         }
         .label {
             font-size: 3rem;
