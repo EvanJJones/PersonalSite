@@ -7,6 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
+    
+    <!-- Remember to include jQuery : -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+<!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 
     <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre&display=swap" rel="stylesheet">
     <title>Portfolio</title>
@@ -24,72 +31,81 @@
     <h1 class="name">Evan Jones</h1>
 
     <main id="grid">
+
+      <!-- Website section -->
         <section class="section-label" id="websites">
             websites
         </section>
+
+        <!-- Movie starz -->
         <article class="element element-color-4">
           <div class="screenshotOverlay element-color-4"></div>
           <div class="label">
               <h1>MovieStarz</h1>
               <p>Social media site where you can review movies and see reviews posted by other people</p>
           </div>
-          <a href="https://project2harvard.herokuapp.com/" class="link-section">
+          <a href="#movie-starz" rel="modal:open" class="link-section">
               <div class="clickableDiv">
                   <h1 class="link">Click Here</h1>
               </div>
           </a>
       </article>
+
+      <!-- Word Guess Game -->
         <article class="element element-color-1">
             <div class="label">
                 <h1>Word Guess Game</h1>
                 <p>A hangman style word guess game, it presents you with a hidden word and you guess letters until you run out of guesses or get the word.</p>
             </div>
-            <a href="https://evanjjones.github.io/Word-Guess-Game/" class="link-section">
-                <div class="clickableDiv">
-                    <h1 class="link">Click Here</h1>
-                </div>
-            </a>
+            <a href="#word-guess" rel="modal:open" class="link-section">
+              <div class="clickableDiv">
+                  <h1 class="link">Click Here</h1>
+              </div>
+          </a>
         </article>
+
+        <!-- Movie Picker -->
         <article class="element element-color-2">
             <div class="screenshotOverlay element-color-1"></div>
             <div class="label">
                 <h1>Movie Picker</h1>
                 <p>Enter a movie you enjoy into the searchbox and it will suggest similar movies and present you with the trailer</p>
             </div>
-            <a href="https://volk117.github.io/Pick-Your-Tomatoes/" class="link-section">
+            <a href="#movie-picker" rel="modal:open" class="link-section">
                 <div class="clickableDiv">
                     <h1 class="link">Click Here</h1>
                 </div>
             </a>
-
-
         </article>
+
+        <!-- Trivia Game -->
         <article class="element element-color-3">
             <div class="screenshotOverlay element-color-1"></div>
             <div class="label">
                 <h1>Trivia</h1>
                 <p>Game related trivia, just click the correct answer.</p>
             </div>
-            <a href="https://evanjjones.github.io/TriviaGame/" class="link-section">
+            <a href="#trivia" rel="modal:open" class="link-section">
                 <div class="clickableDiv">
                     <h1 class="link">Click Here</h1>
                 </div>
             </a>
         </article>
+        <!-- RPG Game -->
         <article class="element element-color-4">
             <div class="screenshotOverlay element-color-4"></div>
             <div class="label">
                 <h1>RPG Game</h1>
-                <p>RPG battle, based on the combat from SMT, try and figure out each enemies weakness</p>
+                <p>RPG battle, based on the combat from the Shin Megami Tensei series, try and figure out each enemies weakness</p>
             </div>
-            <a href="https://evanjjones.github.io/RPG-Game/" class="link-section">
+            <a href="#rpg" rel="modal:open" class="link-section">
                 <div class="clickableDiv">
                     <h1 class="link">Click Here</h1>
                 </div>
             </a>
         </article>
         
-
+        <!-- Games Section -->
         <section class="section-label right" id="games">
             Games
         </section>
@@ -159,7 +175,46 @@
             </div>
 
         </article>
+
+        <section class="section-label center" id="contact">
+            
+        </section>
     </main>
+
+    <!-- Modals -->
+    <!-- movie starz -->
+    <div id="movie-starz" class="modal">
+      <p>Movie Starz</p>
+      <a href="#" rel="modal:close">Close</a>
+    </div>
+
+    <!-- Word guess -->
+    <div id="word-guess" class="modal">
+      <p>Word guess game</p>
+      <a href="#" rel="modal:close">Close</a>
+    </div>
+
+    <!-- movie picker -->
+    <div id="movie-picker" class="modal">
+      <p>Movie Picker</p>
+      <a href="#" rel="modal:close">Close</a>
+    </div>
+
+    <!-- Trivia -->
+    <div id="trivia" class="modal">
+      <p>Trivia Game</p>
+      <a href="#" rel="modal:close">Close</a>
+    </div>
+
+    <!-- RPG -->
+    <div id="rpg" class="modal">
+      <p>RPG Game</p>
+      <a href="#" rel="modal:close">Close</a>
+    </div>
+
+
+    
+    
 </body>
 
 </html>

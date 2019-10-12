@@ -152,7 +152,8 @@ nav a:hover {
 }
 
 .clickableDiv {
-  background-color: #ffffff;
+  /* Hover Color */
+  background-color: #faf1ea;
   position: absolute;
   /* opacity: 0; */
   width: 100%;
@@ -241,4 +242,11 @@ li {
   .elementSmall {
     width: calc(98.5% / 3);
   }
+}
+
+/* Modal stuff after this */
+
+.modal {
+  width: 50%;
+  height: 75%;
 }
