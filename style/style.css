@@ -225,29 +225,6 @@ li {
   font-size: 1.5rem;
   padding-left: 2.5rem;
 }
-/* phones */
-
-@media only screen and (min-width: 320px) and (max-width: 649px) {
-  .element {
-    width: 100%;
-  }
-  .elementSmall {
-    width: 49.5%;
-  }
-  .label {
-    font-size: 3rem;
-  }
-}
-/* everything else */
-
-@media only screen and (min-width: 650px) {
-  .element {
-    width: 49.5%;
-  }
-  .elementSmall {
-    width: calc(98.5% / 3);
-  }
-}
 
 /* Modal stuff after this from w3schools */
 /* The Modal (background) */
@@ -319,4 +296,31 @@ li {
 
 .modal-link {
   margin: 0 1rem 0 1rem;
+}
+
+/* phones */
+
+@media only screen and (min-width: 320px) and (max-width: 649px) {
+  .element {
+    width: 100%;
+  }
+  .elementSmall {
+    width: 49.5%;
+  }
+  .label {
+    font-size: 3rem;
+  }
+  .modal-content {
+    width: 90%;
+  }
+}
+/* everything else */
+
+@media only screen and (min-width: 650px) {
+  .element {
+    width: 49.5%;
+  }
+  .elementSmall {
+    width: calc(98.5% / 3);
+  }
 }
